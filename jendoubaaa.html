@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="
+	https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        figure {
+            position: relative;
+            background-image: url(images/ain\ drahem\ 9.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .fig1 {
+            position: relative;
+            background-image: url(images/parcours-golf.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/darjdoud.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/dar\ jdoud.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/dar\ jdoud\ mekla\ 2.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/dar\ jdoud\ mekla.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/dar\ jdod2.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/dar\ jdod\ paysage.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/le\ rocher.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/le\ rocher\ grillade.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/le\ rocher\ mangger.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/le\ rocher\ mangerr.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="side-menu-switch">
+    <div class="side-menu">
+        <form action="">
+            <input type="text" placeholder="Rechercher">
+            <button>
+                <i class="fas fa-search"></i>
+        </button>
+        </form>
+        <nav>
+            <a href="C:\Users\DELL\Documents\isg L2\Semestre 1\Pweb1\projet\index.html"> Accueil</a>
+            <a href="C:\Users\DELL\Documents\isg L2\Semestre 1\Pweb1\projet\tabarkaaa.html">   Tabarka</a>
+            <a href="C:\Users\DELL\Documents\isg L2\Semestre 1\Pweb1\projet\Ain-Drahem.html">   Ain Drahem</a>
+
+        </nav>
+        <label for="side-menu-switch">
+        <i class="fas fa-angle-left"></i>
+    </label>
+    </div>
+    <div class="descriptioncontainer">
+
+        <h1 class="title">
+            Explorer Jendouba
+        </h1>
+        <div class="slideshow">
+            <ul>
+                <li><img src="images/Beni-Mtir.jpg" alt><span>Beni Mtir, Jendouba</span></li>
+                <li><img src="images/la-jolie-tabarka-et-ses.jpg" alt><span>Tabarka, Jendouba</span></li>
+                <li><img src="images/Paysages-de-Tabarka-et-Aïn-Draham1.-800x500.jpg" alt><span>Ain Drahem, Jendouba</span></li>
+                <li><img src="images/dougga monuments.jpg" alt><span>Dougga, Jendouba</span></li>
+                <li><img src="images/bulla-regia.jpg" alt><span>Bulla Regia, Jendouba</span></li>
+            </ul>
+            <div class="barre_progression"></div>
+
+        </div>
+        <br>
+
+        <div class="description">
+            <p id="firstparag">
+                Jendouba, nommée Souk El Arba jusqu’au 30 avril 1964, est une ville du Nord-Ouest de la Tunisie située à 154 kilomètres de Tunis et à cinquante kilomètres de la frontière algéro-tunisienne.
+            </p>
+            <br>
+            <p>
+                Elle se trouve dans la vallée de la Medjerda au centre d’une plaine fertile.
+            </p>
+            <br>
+            <p>
+                Chef-lieu du gouvernorat qui porte son nom, c’est la plus importante aire urbaine du Nord-Ouest tunisien.
+            </p>
+            <br>
+            <p>
+                Avec ses habitations à l’architecture méditerranéenne, aux formes carrées et à un étage, Jendouba, ville de 60 000 habitants, ne songe pas beaucoup au tourisme, malgré sa proximité avec le site romain de Bulla Regia. Une usine industrielle de lait » LAINO
+                » a remplacé l’ancienne sucrerie (betterave) et la production de levure chimique. Mais ici, c’est l’agriculture qui domine : grandes cultures de blé, pommes de terre, carottes, etc.
+            </p>
+            <br>
+            <p>
+                Le souk hebdomadaire du mercredi lui confère une authenticité certaine. Les étals envahissent la rue principale et ses alentours, de chaque côté de la voie ferrée qui traverse le village. Outre les commerces habituels, on trouvera à Jendouba un souk aux
+                chaussures et aux vêtements et, dans un tout autre ordre d’idées, une mosquée au minaret octogonal, typique de l’époque ottomane.
+            </p>
+            <br>
+            <p>
+                L’économie de Jendouba et de sa région est donc historiquement fondée sur la céréaliculture, l’élevage, les cultures maraîchères et l’arboriculture, même si on assiste depuis la création des zones industrielles de Bulla Regia et El Ertiah à une industrialisation
+                progressive de Jendouba et son agglomération.
+            </p>
+            <br>
+            <p>
+                Dans les environs,à 17 km de Ghardimaou en direction du nord-ouest,le parc national El Feidja comporte une zone de protection intégrale de 174 ha pour la sauvegarde du cerf de Berbérie
+            </p>
+            <section class="activites">
+                <h2 class="title1">
+                    Visites culturelles et thématiques
+                </h2>
+                <h4>
+                    Des lieux à voir, des rues à explorer et des expériences emblématiques.
+                </h4>
+                <div class="activites-container">
+
+                    <article id="site archeo">
+                        <div id="content">
+
+                            <div class="container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <img src="images/bulla-regia-tunisia.jpg" alt="Bulla-regia">
+                                        <p class="caption">Bulla Regia</p>
+                                    </div>
+                                    <div class="back">
+                                        <a href="https://en.wikipedia.org/wiki/Cherry_blossom" target="_blank">
+                                            <h1>Bulla Regia</h1>
+                                        </a>
+                                        <p class="date">Site archéologique</p>
+                                        <p class="descriptionn">Le site archéologique de Bulla Regia est situé à quelques kilomètres au nord de la ville de Jendouba, il constitue l’une des étapes principales du tourisme culturel dans cette région. Les vestiges qu’il présente
+                                            sont les témoins de plus de 17 siècles de l’histoire d’une agglomération fondée par les Numides à la fin du VIe siècle avant J.-C.</p>
+                                        <p class="descriptionn">
+                                            Ses vestiges archéologiques qui s’étendent sur plus de 60 ha, offrent au visiteur des témoignages de la période protohistorique (dolmen et hanout) et numide (urbanisme, niveaux d’habitat, céramique et numismatique, ect.), et surtout, de la période romaine
+                                            ( forum, marché, thermes publics, etc.) . Mais ce qui fait la célébrité du site, ce sont ses demeures patriciennes ornées de très beaux pavements de mosaïques figurées et, surtout, d’étage souterrain, ce qui
+                                            est à ce jour sans exemple dans l’architecture domestique antique.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <img src="images/jendouba culture dougga.jpg">
+                                        <p class="caption">Dougga</p>
+                                    </div>
+                                    <div class="back">
+                                        <a href="https://en.wikipedia.org/wiki/Lavandula" target="_blank">
+                                            <h1>Dougga</h1>
+                                        </a>
+                                        <p class="date">Site archéologique: 3000ans d'histoire</p>
+                                        <p class="descriptionn">Le site de Dougga est représentatif d’une cité africaine qui a vécu sous les rois numides pendant les premiers siècles de l’Empire romain. Il conserve, dans son intégralité, les vestiges d’une cité antique avec
+                                            toutes ses composantes et offre le meilleur exemple connu d’une fondation autochtone et de son évolution à l’époque romaine. Les fouilles archéologiques récentes ont révélé que l’occupation humaine du site remonte
+                                            au moins au milieu du deuxième millénaire avant J..C.
+                                        </p>
+                                        <p class="descriptionn">
+                                            La présence de dolmens l’atteste également. Il est probable que le site fut un haut lieu sacré tôt dans l’histoire. La ville est passée tour à tour du domaine de Carthage au royaume de Numidie dont elle fut une des capitales.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                </div>
+            </section>
+
+            <section class="activites">
+                <h2 class="title1">
+                    Se restaurer
+                </h2>
+                <h4>
+                    Lieux incontournables où manger, boire et faire la fête.
+                </h4>
+                <div class="activites-container">
+
+                    <article id="à-manger">
+                        <div class="photoscontainer">
+                            <div class="card">
+
+                                <div class="card_part card_part-one">
+                                </div>
+
+                                <!-- Photo 2 -->
+                                <div class="card_part card_part-two">
+
+                                </div>
+
+                                <!-- Photo 3 -->
+                                <div class="card_part card_part-three">
+                                </div>
+
+                                <!-- Photo 4 -->
+                                <div class="card_part card_part-four">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="details">
+                            <div class="rowdetailsresto">
+                                <div class="coldetailsresto">
+                                    <div class="detailsresto">
+
+                                        <h2>Dar l jdoud</h2>
+                                        <p>5 avis ★ ★ ★ ★ </p>
+                                        <div class="avis">
+                                            <div class="detailsresto1">
+
+                                                <a> Cuisine: grillade</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="hr"></div>
+                                        <div class="ecrireavis">
+                                            <h2>Emplacement et cordonnées</h2>
+                                            <div class="coordonnées">
+                                                <a href="#"><i class="fa-solid fa-envelope"></i> Adresse: </a>
+                                                <div class="mapouter">
+                                                    <div class="gmap_canvas"><iframe width="200" height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=Club%20des%20immigr%C3%A9s,%20PMXR+4MP,%20Ain%20Draham&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
+                                                            marginheight="0" marginwidth="0"></iframe>
+                                                        <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                                                        <style>
+                                                            .mapouter {
+                                                                position: relative;
+                                                                text-align: right;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                        <a href="https://www.embedgooglemap.net"></a>
+                                                        <style>
+                                                            .gmap_canvas {
+                                                                overflow: hidden;
+                                                                background: none!important;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                </div>
+                                                <div class="contactt">
+                                                    <a href="https://www.facebook.com/CLUB-DES-Immigres-1386493991571407/"> <i class="fa-regular fa-desktop"></i> <b>Site web</b> </a>
+                                                    <a href="#"><i class="fas fa-envelope "></i> <b>Email:</b>jbouslimi@hotmail.com</a>
+                                                    <a href="#"> <i class="fa-solid fa-phone"></i>> <b>Téléphone</b> :+216 21 614 888 </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                    </article>
+
+                    <article id="à-manger">
+                        <div class="photoscontainer1">
+                            <div class="card">
+
+                                <div class="card_part card_part-one">
+                                </div>
+
+                                <!-- Photo 2 -->
+                                <div class="card_part card_part-two">
+
+                                </div>
+
+                                <!-- Photo 3 -->
+                                <div class="card_part card_part-three">
+                                </div>
+
+                                <!-- Photo 4 -->
+                                <div class="card_part card_part-four">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <div class="rowdetailsresto">
+                                <div class="coldetailsresto">
+                                    <div class="detailsresto">
+
+                                        <h2>Le Rocher Restaurant & Bar à Vins</h2>
+                                        <p>5 avis ★ ★ ★ </p>
+                                        <div class="avis">
+                                            <div class="detailsresto1">
+
+                                                <b>Cuisine</b>
+                                                <p>Internationale, Pub, Brasserie gastronomique, Fruits de mer & Poisson, Méditerranéenne, Bar à vins, Tunisienne</p>
+                                                <b>Repas</b>
+                                                <p>Diner</p>
+                                            </div>
+                                        </div>
+                                        <div class="hr"></div>
+                                        <div class="ecrireavis">
+                                            <h2>Emplacement et cordonnées</h2>
+                                            <div class="coordonnées">
+                                                <a href="#"><i class="fas fa-map-marker"></i> Adresse: </a>
+                                                <div class="mapouter">
+                                                    <div class="gmap_canvas"><iframe width="200" height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=1%20Rte%20touristique%20Tabarka,%20Tabarka%208110&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
+                                                            marginheight="0" marginwidth="0"></iframe>
+                                                        <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                                                        <style>
+                                                            .mapouter {
+                                                                position: relative;
+                                                                text-align: right;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style><a href="https://www.embedgooglemap.net">how to embed google map in email</a>
+                                                        <style>
+                                                            .gmap_canvas {
+                                                                overflow: hidden;
+                                                                background: none!important;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                </div>
+                                                <div class="contactt">
+                                                    <a href="https://www.facebook.com/ThabracaThalassoAndDiving/"> <i class="fas fa-desktop"></i> <b>Site web</b> </a>
+                                                    <a href="#"><i class="fas fa-envelope "></i> <b>Email:</b>:
+                                                        a.bouabid@tuihotels.com</a>
+                                                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> <b>Téléphone</b> :+216 78 671 318</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                    </article>
+
+
+
+
+                </div>
+            </section>
+
+
+            <section class="activites">
+                <h2>
+                    On a proposé deux destinations pour vous à ne rater
+                </h2>
+                <h4>
+                    Des lieux à voir, des rues à explorer et des expériences emblématiques.
+                </h4>
+                <div class="poem">
+
+                    <div class="milieu1">
+                        <div>
+                            <h1>Ain Drahem </h1>
+                            <br>
+                            <br>
+                            <h4>
+                                une nature généreuse et splandide
+                            </h4>
+                        </div>
+                        <figure>
+                            <p>Voir Plus</p>
+                            <figcaption>
+                                Ain Drahem s’installe sur une altitude de 800 mètres sur les pentes du Djebel Bir (1014 mètres). Cette montagne fait partie des monts de Kroumirie. Cette région est la zone la plus humide de la Tunisie et elle détiend le record national de pluviométrie
+                                avec 1534 millimètres de précipitations par an et c’est l’une des rares où l’on peut voir de la neigne. Et bien oui, il neige en Tunisie aussi ! et d’ailleurs en hiver un grand nombre de Tunisiens se déplace au nord ouest
+                                du pays rien que pour voir la neige (ne rigolez pas on en voit pas souvent). Le nom Ain Drahem signifie « source d’argent » et évoque les sources d’eau chaude sulfureuses déjà utilisées par les Romains dans l’Antiquité.
+                                Des vestiges de thermes sont ainsi repérables sur le site. AïnDraham est, aussi, une station de villégiature active dès la période du protectorat français. Par ses maisons aux toits de tuiles rouges, par sa forêt enorme
+                                de chênes-liège, sa richesse giboyeuse, notamment en sangliers, elle rappelle un village alpin, apprécié en toutes saisons, pour la chasse, la fraîcheur de son climat, les randonnées pédestres, équestres ou en VTT et le
+                                thermalisme. Ain Draham est aussi la destination des chasseurs par excellence ! Et oui il y a une saison pour la chasse des sangliers en Tunisie et la ville de Ain Drahem est la première destination pour ce type de séjours.
+                                <div class="author">― Gouvernerat de Jendouba</div>
+                            </figcaption>
+                        </figure>
+                        <br>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <h2> regarder plus de photos</h2>
+                    <div class="gallery-image">
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/ain draham  paysage.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Library</p>
+                                        <p class="opacity-low">Architect Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/Ain-Drahem-2-768x558.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Night Sky</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/ain drahem4.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Tea Talk</p>
+                                        <p class="opacity-low">Composite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/ain drahem 6.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Road</p>
+                                        <p class="opacity-low">Landscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/ain drahem3.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Sea</p>
+                                        <p class="opacity-low">Cityscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/Aïn-Draham-Tunisie2-320x240.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Vintage</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <video src="vidéos/Aîn Draham & Beni M'Tir ● Un Paradis sur Terre.mp4" width=700 height=500 controls poster="vignette.jpg">
+                        Cette vidéo ne peut être affichée sur votre navigateur Internet.<br>
+                        Une version est disponible en téléchargement sous  . 
+                      </video>
+
+                    <br>
+                    <br>
+
+
+
+
+
+
+                    <aside>
+                        <div class="mapouterr">
+                            <div class="gmap_canvass"><iframe width="400" height="300" id="gmap_canvass" src="https://maps.google.com/maps?q=https://goo.gl/maps/1L7zM91UPWZG9Uij9&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                                <style>
+                                    .mapouterr {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 300px;
+                                        width: 400px;
+                                        margin-left: 100px;
+                                        margin-right: 100px;
+                                    }
+                                </style>
+                                <a href="https://www.embedgooglemap.net"></a>
+                                <style>
+                                    .gmap_canvass {
+                                        overflow: hidden;
+                                        background: none!important;
+                                        height: 300px;
+                                        width: 400px;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+
+            </section>
+
+
+
+
+
+            <section class="activites">
+
+                <div class="poem">
+
+                    <div class="milieu1">
+                        <div>
+                            <h1>Tabarka </h1>
+                            <br>
+                            <br>
+                            <h4>
+                                un milieu magique immanquable
+                            </h4>
+                        </div>
+                        <figure class="fig1">
+                            <p>Voir Plus</p>
+                            <figcaption>
+                                Une station jeune et pittoresque où se retrouvent les passionnés de plongée sous-marine, de musique et de nature sauvage. La ville est selon beaucoup d’admirateurs, la perle du nord-ouest de la Tunisie avec sa nature généreuse, ses paysages montagneux
+                                et verdoyants. A la rencontre d’une superbe forêt et d’une mer Méditerranée de rêve, se trouve la belle cité de Tabarka, ville célèbre depuis l’antiquité pour la pêche au corail et véritable paradis pour les amoureux de
+                                la mer, de la plaisance, de la plongée, et les passionnés du Golf, de la chasse ou de la randonnée dans les sentiers verdoyants de ses forêts surélevées. Située entre mer et montagne et rendue célèbre par son Festival International
+                                de Jazz. Son slogan « ne pas bronzer idiot » incite et invite des fan de musique du monde entier à pratiquer du tourisme culturel de bon niveau et ne pas uniquement se contenter du soleil et de la plage dorée. ’invitation
+                                comporte naturellement une découverte des richesses historiques et archéologique de la ville. Tabarka dispose de plusieurs points topographiques qui la rendent célèbre et distinguée: sa côte rocheuse qui forme parfois des
+                                aiguilles de pierres et des arches naturelles et les montagnes de Kroumire couvertes d’eucalyptus, de mimosas, de chênes-lièges et de pins qui constituent un magnifique terrain de verdure le rendant ainsi un site d’une
+                                beauté sublime.
+
+                                <div class="author">― Gouvernerat de Jendouba</div>
+                            </figcaption>
+                        </figure>
+                        <br>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <h2> regarder plus de photos</h2>
+                    <div class="gallery-image">
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/tres-beau-parcours (1).jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Library</p>
+                                        <p class="opacity-low">Architect Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/tabarka-sous-marine.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Night Sky</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/tabarkaaaa.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Tea Talk</p>
+                                        <p class="opacity-low">Composite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/tabarka-tunisie.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Road</p>
+                                        <p class="opacity-low">Landscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/parcours-golf (1).jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Sea</p>
+                                        <p class="opacity-low">Cityscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/tabarka-tunisie1.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Vintage</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <video src="vidéos/Aîn Draham & Beni M'Tir ● Un Paradis sur Terre.mp4" width=700 height=500 controls poster="vignette.jpg">
+                        Cette vidéo ne peut être affichée sur votre navigateur Internet.<br>
+                        Une version est disponible en téléchargement sous  . 
+                      </video>
+
+                    <br>
+                    <br>
+
+
+
+
+
+
+                    <aside>
+                        <div class="mapouterr">
+                            <div class="gmap_canvass"><iframe width="400" height="300" id="gmap_canvass" src="https://maps.google.com/maps?q=https://goo.gl/maps/1L7zM91UPWZG9Uij9&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                                <style>
+                                    .mapouterr {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 300px;
+                                        width: 400px;
+                                        margin-left: 100px;
+                                        margin-right: 100px;
+                                    }
+                                </style>
+                                <a href="https://www.embedgooglemap.net"></a>
+                                <style>
+                                    .gmap_canvass {
+                                        overflow: hidden;
+                                        background: none!important;
+                                        height: 300px;
+                                        width: 400px;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>

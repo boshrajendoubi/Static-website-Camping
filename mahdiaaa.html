@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="
+	https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        figure {
+            position: relative;
+            background-image: url(images/la-medina-de-mahdia13.webp);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .fig1 {
+            position: relative;
+            background-image: url(images/mahdia.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/emplacement-sidi-salem.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/emplacement-sidi-salem\ \(1\).jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/emplacement\ sidi\ salemm.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/emplacement\ sidi\ salemmm.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/emplacement\ sidi\ selem.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/resto02.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/resto022.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/resto2.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/resto22.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/resto2222.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="side-menu-switch">
+    <div class="side-menu">
+        <form action="">
+            <input type="text" placeholder="Rechercher">
+            <button>
+                <i class="fas fa-search"></i>
+        </button>
+        </form>
+        <nav>
+            <a href="C:\Users\DELL\Documents\isg L2\Pweb1\projet\index.html"> Accueil</a>
+            <a href="C:\Users\DELL\Documents\isg L2\Pweb1\projet\La medina.html">   La médina</a>
+            <a href="C:\Users\DELL\Documents\isg L2\Pweb1\projet\Salakta.html">   Salakta</a>
+
+        </nav>
+        <label for="side-menu-switch">
+        <i class="fas fa-angle-left"></i>
+    </label>
+    </div>
+    <div class="descriptioncontainer">
+
+        <h1 class="title">
+            Explorer La Mahdia
+        </h1>
+        <div class="slideshow">
+            <ul>
+                <li><img src="images/mahdia01.jpg" alt><span></span></li>
+                <li><img src="images/mahdia02.jpg" alt><span></span></li>
+                <li><img src="images/mahdia03.jpg" alt><span></span></li>
+                <li><img src="images/mahdiaaaaa.jpg" alt><span></span></li>
+                <li><img src="images/mahdia05.jpg" alt><span></span></li>
+            </ul>
+            <div class="barre_progression"></div>
+
+        </div>
+        <br>
+
+        <div class="description">
+            <p id="firstparag">
+                Située à 200 km de la capitale Tunis, La Mahdia est une ville côtière qui a connu durant les dernières décennies un réel essor touristique.
+            </p>
+            <br>
+            <p>
+                Mahdia est tout d’abord un comptoir phénicien puis romain sous le nom d’Aphrodisium. Les fatimides la fondèrent en 920 pour en faire la capitale de leur califat. Le calife fondateur, Abdoullah-El-Mehdi (909-934) qui, après la chute des aghlabides (909),
+                a changé le centre du pouvoir, l’avait choisie pour son emplacement stratégique. Hilaliens, chrétiens, espagnols et Turcs ont tour à tour occupé ou libéré la Ville.
+            </p>
+            <br>
+            <p>
+                Ce sont les espagnols qui ont détruit ses remparts et mis la cité à feu et à sang, en 1555. Après cette date la Ville avait perdu de son importance militaire et commerciale, notamment sous la domination turque et husseinite.
+            </p>
+            <br>
+            <p>
+                Cité au passé glorieux, Mahdia fut la première capitale des califes fatimides au Xe siècle, est bâtie à fleur de rocher sur une presqu’île. Elle tire tout son charme de sa mer cristalline au couleur de saphir, de ses magnifiques plages de sable fin, de
+                sa Médina et de son animation de petite ville traditionnelle, ville de pêcheurs et de tisseurs de soie.
+            </p>
+            <br>
+            <p>
+                La mer Méditerranéenne berce paisiblement les navires du port de Mahdia, pendant que les habitants s’abandonnent aux rayons de soleil à la plage. La longue côte de sable doré attire chaque année de nombreux touristes qui viennent se ressourcer dans ses
+                multiples hôtels luxueux.
+            </p>
+            <br>
+            <p>
+                Aujourd’hui, la Mehdia joue essentiellement un rôle touristique. Ses hôtels et la beauté de sa côte font d’elle une attraction pour nombreux touristes qui cherchent le calme et la possibilité de visiter des vestiges datant de l’époque romaine jusqu’à
+                l’arrivée des arabes. Mahdia a le charme particulier des villes maritimes.Son port de pêche,l’un des plus importants de Tunisie,est spécialisé en particulier dans la pêche à la lueur des lumparos qui créent, les soirs d’été, au départ
+                des chalutiers, un spectacle fascinant, illuminant la mer et le port de Mahdia de mille bougies.
+            </p>
+            <br>
+            <p>
+                Les amateurs de plongée sous-marine s’enthousiasmeront pour les fonds de Mahdia, tout en rêvant à la célèbre épave archéologique explorée jadis par le Commandant Cousteau…
+            </p>
+            <section class="activites">
+                <h2 class="title1">
+                    Visites culturelles et thématiques
+                </h2>
+                <h4>
+                    Des lieux à voir, des rues à explorer et des expériences emblématiques.
+                </h4>
+                <div class="activites-container">
+
+                    <article id="site archeo">
+                        <div id="content">
+
+                            <div class="container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <img src="images/Amphitheatre-El-Jem-Tunisie-El-Djem-03.jpg.crdownload" alt="Bulla-regia">
+                                        <p class="caption">El jem</p>
+                                    </div>
+                                    <div class="back">
+                                        <a href="https://en.wikipedia.org/wiki/Cherry_blossom" target="_blank">
+                                            <h1>El jem</h1>
+                                        </a>
+                                        <p class="date">Site archéologique</p>
+                                        <p class="descriptionn">Dans la petite bourgade d'El Jem s'élèvent les ruines impressionnantes du plus grand colisée d'Afrique du Nord, immense amphithéâtre où pouvaient prendre place 35 000 spectateurs. Cette construction du IIIe siècle
+                                            illustre l'extension et la grandeur de l'Empire romain.</p>
+                                        <p class="descriptionn">
+                                            L’amphithéâtre d’El Jem est un témoignage exceptionnel de l’architecture romaine, notamment celle des monuments construits à des fins de spectacle, en Afrique. Situé dans une plaine au centre de la Tunisie, cet amphithéâtre, construit entièrement en pierre
+                                            de taille, n’est ni creusé ni adossé à une colline. Il reprend en cela le modèle du Colisée de Rome sans toutefois être une simple copie conforme de l'édifice flavien. Ses dimensions (grand axe de 148 mètres
+                                            et petit axe de 122 mètres) et sa contenance (évaluée à 35 000 spectateurs) le classent incontestablement parmi les plus grands amphithéâtres du monde. Sa façade comporte trois étages d’arcades de style corinthien
+                                            ou composite. À l’intérieur, le monument a conservé la majeure partie de l’infrastructure de support des gradins. Le mur du podium, l’arène et les souterrains sont pratiquement intacts. Cette œuvre architecturale
+                                            et artistique érigée vers 238 apr. J.-C.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <img src="images/MAHDIA (2).jpg">
+                                        <p class="caption">La musée de Mahdia</p>
+                                    </div>
+                                    <div class="back">
+                                        <a href="" target="_blank">
+                                            <h1>la musée de mahdia</h1>
+                                        </a>
+                                        <p class="date">Site archéologique: </p>
+                                        <p class="descriptionn">Ce musée se veut autant le reflet de l’histoire générale du pays à laquelle la ville a contribué par un bon chapitre, que celui, plus spécifique, de Mahdia elle-même. Inauguré en 1997, ses collections présentent
+                                            plusieurs pièces dont des céramiques appartenant aux périodes puniques et romaines, un bel ensemble de mosaïques, un trésor d’époque byzantine avec ses 268 monnaies d’or ainsi que divers objets de la période
+                                            islamique.
+                                        </p>
+                                        <p class="descriptionn">
+                                            le musée de Mahdia nous restitue, au rez-de-chaussée, des objets remontant à l’antiquité libyco-punique et romano-africaine tandis qu’une partie de l’étage est consacrée au legs des époques byzantine et islamique. La civilisation grecque est représentée
+                                            par deux colonnes en marbre en partie rongées par les mollusques et provenant d’une épave romaine chargée d’un butin de guerre ayant fait naufrage au large de Mahdia et dont l’essentiel du chargement, récupéré
+                                            dans les années 40,
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                </div>
+            </section>
+
+            <section class="activites">
+                <h2 class="title1">
+                    Se restaurer
+                </h2>
+                <h4>
+                    Lieux incontournables où manger, boire et faire la fête.
+                </h4>
+                <div class="activites-container">
+
+                    <article id="à-manger">
+                        <div class="photoscontainer">
+                            <div class="card">
+
+                                <div class="card_part card_part-one">
+                                </div>
+
+                                <!-- Photo 2 -->
+                                <div class="card_part card_part-two">
+
+                                </div>
+
+                                <!-- Photo 3 -->
+                                <div class="card_part card_part-three">
+                                </div>
+
+                                <!-- Photo 4 -->
+                                <div class="card_part card_part-four">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="details">
+                            <div class="rowdetailsresto">
+                                <div class="coldetailsresto">
+                                    <div class="detailsresto">
+
+                                        <h2>Café resto sidi salem</h2>
+                                        <p>5 avis ★ ★ ★ ★ </p>
+                                        <div class="avis">
+                                            <div class="detailsresto1">
+
+                                                <a> Cuisine:tunisienne</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="hr"></div>
+                                        <div class="ecrireavis">
+                                            <h2>Emplacement et cordonnées</h2>
+                                            <div class="coordonnées">
+                                                <a href="#"><i class="fa-solid fa-envelope"></i> Adresse: </a>
+                                                <div class="mapouter">
+                                                    <div class="gmap_canvas"><iframe width="200" height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=Club%20des%20immigr%C3%A9s,%20PMXR+4MP,%20Ain%20Draham&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
+                                                            marginheight="0" marginwidth="0"></iframe>
+                                                        <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                                                        <style>
+                                                            .mapouter {
+                                                                position: relative;
+                                                                text-align: right;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                        <a href="https://www.embedgooglemap.net"></a>
+                                                        <style>
+                                                            .gmap_canvas {
+                                                                overflow: hidden;
+                                                                background: none!important;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                </div>
+                                                <div class="contactt">
+                                                    <a href="https://www.facebook.com/CLUB-DES-Immigres-1386493991571407/"> <i class="fa-regular fa-desktop"></i> <b>Site web</b> </a>
+                                                    <a href="#"><i class="fas fa-envelope "></i> <b>Email:</b>jbouslimi@hotmail.com</a>
+                                                    <a href="#"> <i class="fa-solid fa-phone"></i>> <b>Téléphone</b> :+216 21 614 888 </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                    </article>
+
+                    <article id="à-manger">
+                        <div class="photoscontainer1">
+                            <div class="card">
+
+                                <div class="card_part card_part-one">
+                                </div>
+
+                                <!-- Photo 2 -->
+                                <div class="card_part card_part-two">
+
+                                </div>
+
+                                <!-- Photo 3 -->
+                                <div class="card_part card_part-three">
+                                </div>
+
+                                <!-- Photo 4 -->
+                                <div class="card_part card_part-four">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <div class="rowdetailsresto">
+                                <div class="coldetailsresto">
+                                    <div class="detailsresto">
+
+                                        <h2>Le Rocher Restaurant & Bar à Vins</h2>
+                                        <p>5 avis ★ ★ ★ </p>
+                                        <div class="avis">
+                                            <div class="detailsresto1">
+
+                                                <b>Cuisine</b>
+                                                <p>Internationale, Pub, Brasserie gastronomique, Fruits de mer & Poisson, Méditerranéenne, Bar à vins, Tunisienne</p>
+                                                <b>Repas</b>
+                                                <p>Diner</p>
+                                            </div>
+                                        </div>
+                                        <div class="hr"></div>
+                                        <div class="ecrireavis">
+                                            <h2>Emplacement et cordonnées</h2>
+                                            <div class="coordonnées">
+                                                <a href="#"><i class="fas fa-map-marker"></i> Adresse: </a>
+                                                <div class="mapouter">
+                                                    <div class="gmap_canvas"><iframe width="200" height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=1%20Rte%20touristique%20Tabarka,%20Tabarka%208110&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
+                                                            marginheight="0" marginwidth="0"></iframe>
+                                                        <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                                                        <style>
+                                                            .mapouter {
+                                                                position: relative;
+                                                                text-align: right;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style><a href="https://www.embedgooglemap.net">how to embed google map in email</a>
+                                                        <style>
+                                                            .gmap_canvas {
+                                                                overflow: hidden;
+                                                                background: none!important;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                </div>
+                                                <div class="contactt">
+                                                    <a href="https://www.facebook.com/ThabracaThalassoAndDiving/"> <i class="fas fa-desktop"></i> <b>Site web</b> </a>
+                                                    <a href="#"><i class="fas fa-envelope "></i> <b>Email:</b>:
+                                                        a.bouabid@tuihotels.com</a>
+                                                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> <b>Téléphone</b> :+216 78 671 318</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                    </article>
+
+
+
+
+                </div>
+            </section>
+
+
+            <section class="activites">
+                <h2>
+                    On a proposé deux destinations pour vous à ne rater
+                </h2>
+                <h4>
+                    Des lieux à voir, des rues à explorer et des expériences emblématiques.
+                </h4>
+                <div class="poem">
+
+                    <div class="milieu1">
+                        <div>
+                            <h1>la médina</h1>
+                            <br>
+                            <br>
+                            <h4>
+                                une architecture et structure captivante
+                            </h4>
+                        </div>
+                        <figure>
+                            <p>Voir Plus</p>
+                            <figcaption>
+                                A quelques minutes des hôtels, se dresse la médina de Mahdia qui regorge d’histoire et de charme. La médina de Mahdia est une des plus intéressantes de la Tunisie. Sa structure est organisée en deux périphéries est-ouest : une qui commence de la Skifa
+                                el Kahla pour se terminer à la place de la grande mosquée. Elle regroupe les espaces publics que sont les cafés, les ateliers d’artisans (on en dénombre une centaine aujourd’hui), le hammam et la mosquée. L’autre espace
+                                dédié aux habitations atteint l’ouest de la Skifa jusqu’aux limites du cimetière marin. La médina accueille six mosquées en son sein. Les souks sont regroupés dans les deux rues parallèles qui vont de la Skifa à la Grande
+                                Mosquée. Hormis les boutiques touristiques, vous découvrirez toute la richesse de l’artisanat de Mahdia à travers les très nombreux bijoutiers et ateliers de tissage : bijoux d’or, d’argent et d’ambre ; tissus de coton,
+                                en soie et fils d’or, aux couleurs vives et variées.
+                                <div class="author">― Gouvernerat de Mahdia</div>
+                            </figcaption>
+                        </figure>
+                        <br>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <h2> regarder plus de photos</h2>
+                    <div class="gallery-image">
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/la-medina-de-mahdia13.webp" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Library</p>
+                                        <p class="opacity-low">Architect Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/la medina de mahdia.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Night Sky</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/La-Médina-de-Mahdia1-374x252 (1).jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Tea Talk</p>
+                                        <p class="opacity-low">Composite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/La-Médina-de-Mahdia4.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Road</p>
+                                        <p class="opacity-low">Landscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/La-Médina-de-Mahdia3-800x500.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Sea</p>
+                                        <p class="opacity-low">Cityscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/la medina de mahdia 1.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Vintage</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <video src="vidéos/Aîn Draham & Beni M'Tir ● Un Paradis sur Terre.mp4" width=700 height=500 controls poster="vignette.jpg">
+                        Cette vidéo ne peut être affichée sur votre navigateur Internet.<br>
+                        Une version est disponible en téléchargement sous  . 
+                      </video>
+
+                    <br>
+                    <br>
+
+
+
+
+
+
+                    <aside>
+                        <div class="mapouterr">
+                            <div class="gmap_canvass"><iframe width="400" height="300" id="gmap_canvass" src="https://maps.google.com/maps?q=https://goo.gl/maps/1L7zM91UPWZG9Uij9&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                                <style>
+                                    .mapouterr {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 300px;
+                                        width: 400px;
+                                        margin-left: 100px;
+                                        margin-right: 100px;
+                                    }
+                                </style>
+                                <a href="https://www.embedgooglemap.net"></a>
+                                <style>
+                                    .gmap_canvass {
+                                        overflow: hidden;
+                                        background: none!important;
+                                        height: 300px;
+                                        width: 400px;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+
+            </section>
+
+
+
+
+
+            <section class="activites">
+
+                <div class="poem">
+
+                    <div class="milieu1">
+                        <div>
+                            <h1>Salakta </h1>
+                            <br>
+                            <br>
+                            <h4>
+                                une nature superbe et splandide
+                            </h4>
+                        </div>
+                        <figure class="fig1">
+                            <p>Voir Plus</p>
+                            <figcaption>
+                                Mahdia abrite sans aucun doute les plus belles plages de la Tunisie. La beauté de ses plages réside dans l’aspect limpide de l’eau, dans le sable fin, mais également dans leur aspect vierge et sauvage. Les plages de Mahdia s’étendent sur des kilomètres
+                                et des kilomètres. Vous trouverez de nombreuses plages totalement vierges mais si vous préférez des plages plus animées ou les plages privées des hôtels, vous serez servi également. Vous n’aurez pas à parcourir des dizaines
+                                de kilomètres pour dénicher une plage vierge, il faut juste sortir de la ville et vous aurez le bleu de la Méditerranée comme si vous étiez seul au monde. Mahdia n’a pas que ses plages, son sable et son soleil à offrir
+                                aux touristes, elle constitue également une destination culturelle à part entière avec ses ruines antiques et son cimetière marin.
+
+                                <div class="author">― Gouvernerat de Mahdia</div>
+                            </figcaption>
+                        </figure>
+                        <br>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <h2> regarder plus de photos</h2>
+                    <div class="gallery-image">
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/les magnifiques plages de mahdia.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Library</p>
+                                        <p class="opacity-low">Architect Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/les magnifiques.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Night Sky</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/Les-magnifiques-plages-de-Mahdia-Tunisie2.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Tea Talk</p>
+                                        <p class="opacity-low">Composite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/Les-magnifiques-plages-de-Mahdia-Tunisie4.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Road</p>
+                                        <p class="opacity-low">Landscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/mahdia-4.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Sea</p>
+                                        <p class="opacity-low">Cityscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/mahdia.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Vintage</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+                    <br>
+
+
+
+
+
+
+                    <aside>
+                        <div class="mapouterr">
+                            <div class="gmap_canvass"><iframe width="400" height="300" id="gmap_canvass" src="https://maps.google.com/maps?q=https://goo.gl/maps/1L7zM91UPWZG9Uij9&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                                <style>
+                                    .mapouterr {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 300px;
+                                        width: 400px;
+                                        margin-left: 100px;
+                                        margin-right: 100px;
+                                    }
+                                </style>
+                                <a href="https://www.embedgooglemap.net"></a>
+                                <style>
+                                    .gmap_canvass {
+                                        overflow: hidden;
+                                        background: none!important;
+                                        height: 300px;
+                                        width: 400px;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>

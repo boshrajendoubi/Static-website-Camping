@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="
+	https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        figure {
+            position: relative;
+            background-image: url(images/canyon-tamerza-tozeur-tunisie-1200x800.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin-left: 111px;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .fig1 {
+            position: relative;
+            background-image: url(images/chebikaaaa.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/la-fontana.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/fontanaa.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/fontana.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/tozeur-resto-300x142.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/la\ fontana\ manger.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/dar\ dedaa.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/en-attente-de-la-jarre.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/restaurant-dar-deda.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/deda.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/dar\ dedaaaaa.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="side-menu-switch">
+    <div class="side-menu">
+        <form action="">
+            <input type="text" placeholder="Rechercher">
+            <button>
+                <i class="fas fa-search"></i>
+        </button>
+        </form>
+        <nav>
+            <a href="C:\Users\DELL\Documents\isg L2\Pweb1\projet\index.html"> Accueil</a>
+            <a href="C:\Users\DELL\Documents\isg L2\Pweb1\projet\tamaghzaaa.html"> Tamaghza</a>
+            <a href="C:\Users\DELL\Documents\isg L2\Pweb1\projet\chebika.html">  Chebika</a>
+
+        </nav>
+        <label for="side-menu-switch">
+        <i class="fas fa-angle-left"></i>
+    </label>
+    </div>
+    <div class="descriptioncontainer">
+
+        <h1 class="title">
+            Explorer Tozeur
+        </h1>
+        <div class="slideshow">
+            <ul>
+                <li><img src="images/tamaghza (1).jpg" alt><span>Tamaghza,Tozeur</span></li>
+                <li><img src="images/Circuit-Bivoic-tozeur-4.jpg" alt><span>Circuit Bivoic, Tozeur</span></li>
+                <li><img src="images/camel-background.jpg" alt><span>Le desert, Tozeur</span></li>
+                <li><img src="images//médina de tozeur.jpg" alt><span>La médina, Tozeur</span></li>
+                <li><img src="images/chebika-oasis-lac-palmier-1200x800.jpg" alt><span>Chebika Tozeur</span></li>
+            </ul>
+            <div class="barre_progression"></div>
+
+        </div>
+        <br>
+
+        <div class="description">
+            <p id="firstparag">
+                Située au sud de la Tunisie, cette petite ville trône au milieu de splendides palmeraies où la cruauté du désert est adoucie par la beauté du paysage à perte de vue.
+            </p>
+            <br>
+            <p>
+                Généralement, le peuple tunisien est connu pour être un peuple très généreux et convivial de nature. Et Tozeur n'échappe pas à la règle: tout le monde est le bienvenu et l'étranger est accueilli comme un roi.
+            </p>
+            <br>
+            <p>
+                Situé dans le sud de la Tunisie, Tozeur fait partie de ces nouvelles destinations touristiques axées sur le désert. Tozeur se trouve en effet aux portes du Sahara et propose surtout le tourisme dans le désert : excursion en 4x4, expédition en quad, ballade
+                en buggy, trekking pour admirer cette étendue infinie de sable brûlant et ses dunes.
+            </p>
+            <br>
+            <p>
+                Un coucher du soleil dans ce décor est un spectacle époustouflant que vous n'avez pas le droit de rater. Depuis quelques années, Tozeur attire la convoitise des investisseurs touristiques, ce qui fait que ses infrastructures hôtelières se sont beaucoup
+                développées surtout depuis les années 90. Sortez des sentiers battus et profitez de vos vacances autrement en choisissant de partir à Tozeur, d'autant que les offres de séjours sur cette destination se font de plus en plus nombreuses.
+            </p>
+            <br>
+            <p>
+                Et si vous avez envie de connaître l'art et le mode de vie traditionnel du coin, faites un détour au musée Dar Cheraït. À Tozeur, les activités abondent et le golf fait partie du lot. Et un green en plein désert, il faut le voir !
+            </p>
+            <br>
+            <p>
+                Tozeur, dans le sud de la Tunisie, est un peu la dernière oasis touristique avant le grand désert. Point de départ idéal pour lancer des excursions dans le Sahara, Tozeur est également une ville agréable qui connaît ses propres attraits... on y séjourne
+                donc avec plaisir !
+            </p>
+            <br>
+            <p>
+                L'hébergement à Tozeur est très simple, de la maison de jeune aux maisons d'hôtes, jusqu'aux palaces de mille et une nuits, tout y est.
+            </p>
+            <section class="activites">
+                <h2 class="title1">
+                    Visites culturelles et thématiques
+                </h2>
+                <h4>
+                    Des lieux à voir, des rues à explorer et des expériences emblématiques.
+                </h4>
+                <div class="activites-container">
+
+                    <article id="site archeo">
+                        <div id="content">
+
+                            <div class="container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <img src="images/dar chraiettt.jpg" alt="Bulla-regia">
+                                        <p class="caption">dar cheraït</p>
+                                    </div>
+                                    <div class="back">
+                                        <a href="https://en.wikipedia.org/wiki/Cherry_blossom" target="_blank">
+                                            <h1>dar cheraït</h1>
+                                        </a>
+                                        <p class="date">Site archéologique</p>
+                                        <p class="descriptionn">e musée Dar Cheraït Tozeur est un musée tunisien situé à quelques centaines de mètres de la palmeraie de la ville, aux portes du désert du Sahara. C’est le premier musée privé de Tunisie, il est fondé en 1990 par
+                                            Abderrazak Cheraït, maire de Tozeur, qui est l’initiateur de plusieurs projets culturels pour la mise en valeur du patrimoine tunisien. Le Musée Dar Cheraït Tozeur a été construit sur le modèle d’un palais bourgeois.
+                                            Dans les pièces du palais sont reconstituées des scènes de la vie tunisienne au XIXe siècle: la chambre du bey (le notable), la vie de la cuisine, une reproduction fidèle d’un hammam, le maître de l’école coranique,
+                                            et quelques scènes de mariage.</p>
+                                        <p class="descriptionn">
+                                            Le musée Dar Cheraït rassemble trois espaces indépendants, qui ont peu de choses en commun si ce n’est 3 approches différentes de la civilisation tunisienne. Si vous ne deviez visiter qu’une seule partie de l’ensemble, arpentez le très beau musée des
+                                            Arts et Traditions. Les enfants apprécieront, quant à eux, la Médina des Mille et Une Nuits. Un mélange de culture (ou prétendue) et de divertissement. Le soir, vous pouvez assister à un spectacle de son et
+                                            lumière sur les plus célèbres histoires d’Orient : les Mille et Une Nuits, Aladin, Ali Baba et les 40 voleurs… (45 minutes environ). Divertissant pour certains, décevant pour d’autres, les avis à la sortie seront
+                                            mitigés.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <img src="images/quartier.png">
+                                        <p class="caption">le quartier d’ouled el-hadef</p>
+                                    </div>
+                                    <div class="back">
+                                        <a href="" target="_blank">
+                                            <h1>le quartier d’ouled el-hadef</h1>
+                                        </a>
+                                        <p class="date">Site archéologique:</p>
+                                        <p class="descriptionn">Aussi appellé le quartier du vieux Ouled el Hadef, la Medina de Tozeur est l’une des mieux conservées de Tunisie. Elle possède un magnifique mur de pierre qui l’entoure. On remarque à l’entrée la pierre traditionnelle
+                                            de la région: la briquette. Tous les murs et la plupart des bâtiments administratifs sont réalisés grâce à ce matériau construit au sud ouest de la ville. On peut d’ailleurs en visiter la fabrique.
+                                        </p>
+                                        <p class="descriptionn">
+                                            A peine rentrés dans la cité, vous serez envoûté par le charme des petites ruelles voutées magnifiquement bien conservées. Une visite est indispensable pour bien comprendre la ville. Cette visite très agréable vous permettra d’arpenter les ruelles de
+                                            la Medina fortifiée sans avoir à consulter un plan. Au détour d’un chemin, vous tomberez sur l’une des plus vielles et plus belles portes de Tunisie. Celle-ci est travaillée en bois de palmier. Au cœur de la
+                                            cité, on trouve aussi l’école coranique et son minaret imposant, ainsi que la maison du bey, sorte de gouverneur du coin. Cette maison est d’ailleurs célèbre puisqu’elle a servi à Anthony Minghella pour tourner
+                                            quelques scènes du Patient Anglais. On y voit d’ailleurs une remarquable moucharabieh, sorte de fenêtre en bois de palme, permettant à la femme de regarder au dehors sans que celle-ci soit vue. La visite dure
+                                            environ une heure.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                </div>
+            </section>
+
+            <section class="activites">
+                <h2 class="title1">
+                    Se restaurer
+                </h2>
+                <h4>
+                    Lieux incontournables où manger, boire et faire la fête.
+                </h4>
+                <div class="activites-container">
+
+                    <article id="à-manger">
+                        <div class="photoscontainer">
+                            <div class="card">
+
+                                <div class="card_part card_part-one">
+                                </div>
+
+                                <!-- Photo 2 -->
+                                <div class="card_part card_part-two">
+
+                                </div>
+
+                                <!-- Photo 3 -->
+                                <div class="card_part card_part-three">
+                                </div>
+
+                                <!-- Photo 4 -->
+                                <div class="card_part card_part-four">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="details">
+                            <div class="rowdetailsresto">
+                                <div class="coldetailsresto">
+                                    <div class="detailsresto">
+
+                                        <h2>La fontana</h2>
+                                        <p>5 avis ★ ★ ★ ★ </p>
+                                        <div class="avis">
+                                            <div class="detailsresto1">
+
+                                                <a> Cuisine: Italienne, Méditerranéenne, Européenne, Tunisienne</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="hr"></div>
+                                        <div class="ecrireavis">
+                                            <h2>Emplacement et cordonnées</h2>
+                                            <div class="coordonnées">
+                                                <a href="#"><i class="fa-solid fa-envelope"></i> Adresse: </a>
+                                                <div class="mapouter">
+                                                    <div class="gmap_canvas"><iframe width="200" height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=Restaurant%20La%20Fontana,%20W47C+G79,%20Tozeur&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
+                                                            marginheight="0" marginwidth="0"></iframe>
+                                                        <a href="https://123movies-to.org"></a><br>
+                                                        <style>
+                                                            .mapouter {
+                                                                position: relative;
+                                                                text-align: right;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                        <a href="https://www.embedgooglemap.net"></a>
+                                                        <style>
+                                                            .gmap_canvas {
+                                                                overflow: hidden;
+                                                                background: none!important;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                </div>
+                                                <div class="contactt">
+                                                    <a href="https://www.facebook.com/Restaurant-pizzeria-la-fontana-zone-touristique-tozeur-441306029372686/"> <i class="fa-regular fa-desktop"></i> <b>Site web</b> </a>
+                                                    <a href="#"><i class="fas fa-envelope "></i> <b>Email:</b>fontana5555@yahoo.fr</a>
+                                                    <a href="#"> <i class="fa-solid fa-phone"></i>> <b>Téléphone</b> :+216 76 462 776 </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                    </article>
+
+                    <article id="à-manger">
+                        <div class="photoscontainer1">
+                            <div class="card">
+
+                                <div class="card_part card_part-one">
+                                </div>
+
+                                <!-- Photo 2 -->
+                                <div class="card_part card_part-two">
+
+                                </div>
+
+                                <!-- Photo 3 -->
+                                <div class="card_part card_part-three">
+                                </div>
+
+                                <!-- Photo 4 -->
+                                <div class="card_part card_part-four">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <div class="rowdetailsresto">
+                                <div class="coldetailsresto">
+                                    <div class="detailsresto">
+
+                                        <h2>Dar dedda</h2>
+                                        <p>5 avis ★ ★ ★ </p>
+                                        <div class="avis">
+                                            <div class="detailsresto1">
+
+                                                <b>Cuisine</b>
+                                                <p>Tunisienne</p>
+                                                <b>Repas</b>
+                                                <p>Diner et dejeuner</p>
+                                            </div>
+                                        </div>
+                                        <div class="hr"></div>
+                                        <div class="ecrireavis">
+                                            <h2>Emplacement et cordonnées</h2>
+                                            <div class="coordonnées">
+                                                <a href="#"><i class="fas fa-map-marker"></i> Adresse: </a>
+                                                <div class="mapouter">
+                                                    <div class="gmap_canvas"><iframe width="200" height="100" id="gmap_canvas" src="https://maps.google.com/maps?q=Restaurant%20Dar%20Deda%20%E2%B5%8D%E2%B5%87%E2%B5%80%E2%B5%A1%E2%B4%B0%20%E2%B5%84%E2%B5%89%E2%B5%9C%20%E2%B4%B7%E2%B4%BB%E2%B4%B7%E2%B4%B0,%20Ave%20Abdul%20kacem%20Chebbi,%20Tozeur&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                                        <a href="https://123movies-to.org"></a><br>
+                                                        <style>
+                                                            .mapouter {
+                                                                position: relative;
+                                                                text-align: right;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                        <a href="https://www.embedgooglemap.net"></a>
+                                                        <style>
+                                                            .gmap_canvas {
+                                                                overflow: hidden;
+                                                                background: none!important;
+                                                                height: 100px;
+                                                                width: 200px;
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                </div>
+                                                <div class="contactt">
+                                                    <a href="https://www.facebook.com/restaurantdardeda/"> <i class="fas fa-desktop"></i> <b>Site web</b> </a>
+                                                    <a href="#"><i class="fas fa-envelope "></i> <b>Email:</b>:
+                                                        dardeda@gmail.com/a>
+                                                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> <b>Téléphone</b> :+216 98 694 198</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                    </article>
+
+
+
+
+                </div>
+            </section>
+
+
+            <section class="activites">
+                <h2>
+                    On a proposé deux destinations pour vous à ne rater
+                </h2>
+                <h4>
+                    Des lieux à voir, des rues à explorer et des expériences emblématiques.
+                </h4>
+                <div class="poem">
+
+                    <div class="milieu1">
+                        <div>
+                            <h1>Tamaghza</h1>
+                            <br>
+                            <br>
+                            <h4>
+                                une nature généreuse et splandide
+                            </h4>
+                        </div>
+                        <figure>
+                            <p>Voir Plus</p>
+                            <figcaption>
+                                Tamerza ( parfois écrite Tamaghza ) est une des plus belles Oasis de Montagnes. A plus de 300m d’altidude, elle est située à environ 70 km (50 mn) de l’aéroport deTozeur. L’oasis, qui procure l’eau, et une agréable fraicheur lors des chaleurs, tranche
+                                d’avec ce paysage montagneux, tantôt beige, tantôt rose. Le site, autrefois appelé Ad Turres était alors chargé de la défense des frontières de l'Empire romain avant de devenir le siège d'un évêché sous les Byzantins. Devant
+                                l’Oasis se dressent les ruines de l’ancien village de Tamerza, abandonné en 1969. Contrairement à ce qui se dit souvent, le village n’a pas été abandonné suite à des inondations, mais il s’est effondré suite à des pluies
+                                qui ont duré plusieurs jours. Les matériaux n’ont pas résisté aux infiltrations d’eau et les villageois se sont installés à quelques centaines de mètres plus lois, l’actuel Tamerza avec un peu plus de 2500 habitants. Aujourd’hui
+                                les ruines, appelées aussi «village endormi de Tamerza» sont visitées par des voyageurs en quête de souvenirs d’une terre Berbère oubliée. Seul le marabout est encore utilisé aujourd’hui. Certains soirs, le Tamerza Palace
+                                & Spa, hôtel de Charme s’intégrant à la montagne juste devant et sur lequel veille le village depuis 1992, organise des soirées mystiques aux 5000 bougies.
+                                <div class="author">― Gouvernerat de Tozeur</div>
+                            </figcaption>
+                        </figure>
+                        <br>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <h2> regarder plus de photos</h2>
+                    <div class="gallery-image">
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/tamaghza1.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Library</p>
+                                        <p class="opacity-low">Architect Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images//tamaghza2.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Night Sky</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/tamaghza3.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Tea Talk</p>
+                                        <p class="opacity-low">Composite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/tamaghza4.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Road</p>
+                                        <p class="opacity-low">Landscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/tamaghza5.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Sea</p>
+                                        <p class="opacity-low">Cityscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/tamaghza6.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Vintage</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <video src="vidéos/Oasis Tamaghza ● الواحة الجبلية بتمغزة.mp4" width=700 height=500 controls poster="vignette.jpg">
+                        Cette vidéo ne peut être affichée sur votre navigateur Internet.<br>
+                        Une version est disponible en téléchargement sous  . 
+                      </video>
+
+                    <br>
+                    <br>
+
+
+
+
+
+
+                    <aside>
+                        <div class="mapouterr">
+                            <div class="gmap_canvass"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=https://goo.gl/maps/g9BpwUNgVPSF6BLp9&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://123movies-to.org"></a><br>
+                                <style>
+                                    .mapouterr {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 300px;
+                                        width: 400px;
+                                    }
+                                </style>
+                                <a href="https://www.embedgooglemap.net"></a>
+                                <style>
+                                    .gmap_canvass {
+                                        overflow: hidden;
+                                        background: none!important;
+                                        height: 300px;
+                                        width: 400px;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+
+            </section>
+
+
+
+
+
+            <section class="activites">
+
+                <div class="poem">
+
+                    <div class="milieu1">
+                        <div>
+                            <h1>chebika</h1>
+                            <br>
+                            <br>
+                            <h4>
+                                un milieu magique immanquable
+                            </h4>
+                        </div>
+                        <figure class="fig1">
+                            <p>Voir Plus</p>
+                            <figcaption>
+                                A une heure de route au nord-ouest de Tozeur, après avoir traversé le chott (lac salé) el-Gharsa, l'oasis de montagne de Chebika s'accroche au flanc de rochers désolés. Faites de pierres et de terre, les maisons ont été abandonnées pour des constructions
+                                plus modernes en parpaings en contrebas. Elément indispensable à l'établissement de tout village tunisien, l'eau, présente sous forme de sources, permet de faire prospérer une palmeraie fournie au pied des anciennes maisons
+                                de Chebika. Au coucher du soleil, le contraste est saisissant entre les cimes verdoyantes des palmiers et les sommets ocre alentour. Les amateurs de randonnée peuvent poursuivre leur exploration jusqu'à l'oasis de Tamerza
+                                (compter 1 h 30).
+
+                                <div class="author">― Gouvernerat de Tozeur</div>
+                            </figcaption>
+                        </figure>
+                        <br>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <h2> regarder plus de photos</h2>
+                    <div class="gallery-image">
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/chebika.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Library</p>
+                                        <p class="opacity-low">Architect Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/chebikaa.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Night Sky</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/chebikaaa.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Tea Talk</p>
+                                        <p class="opacity-low">Composite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgbox-row">
+                            <div class="img-box">
+                                <img src="images/chebikaaaa.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Road</p>
+                                        <p class="opacity-low">Landscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/chebikaaaaa.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Sea</p>
+                                        <p class="opacity-low">Cityscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="images/chebikaaaaaa.jpg" alt="" />
+                                <div class="transparent-box">
+                                    <div class="captionn">
+                                        <p>Vintage</p>
+                                        <p class="opacity-low">Cinematic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <video src="vidéos/Oasis Tamaghza ● الواحة الجبلية بتمغزة.mp4" width=700 height=500 controls poster="vignette.jpg">
+                        Cette vidéo ne peut être affichée sur votre navigateur Internet.<br>
+                        Une version est disponible en téléchargement sous  . 
+                      </video>
+
+                    <br>
+                    <br>
+
+
+
+
+
+
+                    <aside>
+                        <div class="mapouterr">
+                            <div class="gmap_canvass"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=https://goo.gl/maps/uk9bhsDf1eko2bk76&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                                <style>
+                                    .mapouterr {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 300px;
+                                        width: 400px;
+                                    }
+                                </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                                <style>
+                                    .gmap_canvass {
+                                        overflow: hidden;
+                                        background: none!important;
+                                        height: 300px;
+                                        width: 400px;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>

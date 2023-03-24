@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <!--   <style>
+        figure {
+            position: relative;
+            background-image: url(images/ain\ drahem\ 9.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .fig1 {
+            position: relative;
+            background-image: url(images/parcours-golf.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/darjdoud.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/dar\ jdoud.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/dar\ jdoud\ mekla\ 2.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/dar\ jdoud\ mekla.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/dar\ jdod2.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/dar\ jdod\ paysage.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/le\ rocher.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/le\ rocher\ grillade.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/le\ rocher\ mangger.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/le\ rocher\ mangerr.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+    </style>  -->
+    <style>
+        .slideshoww {
+            list-style-type: none;
+        }
+        /** SLIDESHOW **/
+        
+        .slideshoww,
+        .slideshoww:after {
+            top: -16px;
+            /*Not sure why I needed this fix*/
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            z-index: 0;
+        }
+        
+        .slideshoww li span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            z-index: 0;
+            animation: imageAnimation 30s linear infinite 0s;
+        }
+        
+        .slideshoww li:nth-child(1) span {
+            background-image: url(images/ain\ drahem16.jpeg);
+        }
+        
+        .slideshoww li:nth-child(2) span {
+            background-image: url(images/ain\ drahem\ 9.jpg);
+            animation-delay: 6s;
+        }
+        
+        .slideshoww li:nth-child(3) span {
+            background-image: url(images/Paysages-de-Tabarka-et-Aïn-Draham1.-800x500.jpg);
+            animation-delay: 12s;
+        }
+        
+        .slideshoww li:nth-child(4) span {
+            background-image: url(images/Les-montagnes-d’Ain-Drahem3..jpg);
+            animation-delay: 18s;
+        }
+        
+        .slideshoww li:nth-child(5) span {
+            background-image: url(images/aindrahem.jpg);
+            animation-delay: 24s;
+        }
+        
+        @keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                animation-timing-function: ease-in;
+            }
+            8% {
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+            17% {
+                opacity: 1
+            }
+            25% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        
+        @keyframes titleAnimation {
+            0% {
+                opacity: 0
+            }
+            8% {
+                opacity: 1
+            }
+            17% {
+                opacity: 1
+            }
+            19% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        
+        .no-cssanimations .cb-slideshow li span {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="body1">
+
+
+
+    <a class="a-retour" href="C:\Users\DELL\Documents\isg L2\Semestre 1\Pweb1\projet\jendoubaaa.html"> <button class="btn-avis"> Retour</button> </a>
+    <ul class="slideshoww">
+        <li><span></span></li>
+        <li><span>2</span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+
+
+
+    <div id="milieuContainer">
+        <div class="textt">
+            <h1 class="titre">Sites et lieux à visiter à Ain Draham </h1>
+            <p class="p1">La ville de Ain Draham se trouve dans une localisation naturelle exceptionnelle. Elle est site perchée entredeux montagnes le djebel El Bir haut de1 014 mètres et le djebel Fersig. La ville est aussi entourée par deux vallées : la vallée d’El
+                Atatfa et la vallée El Yafcha. Elle posséde une nature généreuse et des paysages montagneux sublimes qui font d’elle une destination à part.</p>
+            <p class="p1">La visite de Ain Draham est incontournable quand on visite la Tunisie. Ces paysages naturels sont uniques. La nature constitue une partie importante de la culture locale de la région. Autres que ses vues à couper le souffle. La ville pittoresque
+                de Ain Draham offre aux visiteurs la possibilité de se détendre avec plusieurs spas, hammams, piscines chauffées et centres de thalassothérapie.</p>
+
+
+        </div>
+        <br>
+        <br>
+        <h2> Des lieux pittoresques à graver dans la mémoire </h2>
+
+        <section class="cards-wrapper">
+            <div class="card-grid-space">
+                <div class="num">01</div>
+                <a class="cardd" style=" background-image: url(images/benimtirrr.jpg);">
+                    <div>
+                        <h1>Beni Mtir</h1>
+                        <p style="margin-top: 6em;">La zone touristique de Beni M’tir est situé au nord de la ville de Beni M’tir. Il s’étale sur 4 ha, et occupe une colline avec un point culminant de 500m. Un projet touristique est en train de se faire, il intègre la composante
+                            thermale. Le site offre des vues panoramiques sur le barrage existant de Beni M’tir. Le site est accessible à partir de la RR65, c’est une voie serpentine pittoresque qui offre des vues panoramiques intéressantes.</p>
+                        <div class="date">paysage et nature</div>
+                        <div class="tags">
+                            <div class="tag">moyen</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">02</div>
+                <a class="cardd" style=" background-image: url(images/montagness.png);">
+                    <div>
+                        <h1>Montagnes</h1>
+                        <p>Pour ceux qui ne la connaissent pas, La délégation d’Ain Drahem, est la plus importante zone montagneuse et forestière de la Tunisie, qui offre une biodiversité très généreuses et des ressources hydriques. Avec sa végétation luxuriante
+                            et ses reliefs majestueux, réserve à lui seul des émotions inoubliables. On pourra se donner de nombreux buts d’excursion dans les environs ; on pourra aussi consacrer une excursion plus longue à la visite de quelques grands
+                            lieux touristiques de la Tunisie du nord.</p>
+                        <div class="date">Balade vélo</div>
+                        <div class="tags">
+                            <div class="tag">difficil</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">03</div>
+                <a class="cardd" style="background-image: url(images/Hammam-MellègueTunisie4.png);">
+                    <div>
+                        <h1>Hamem Mallègue</h1>
+                        <p> Connu par ses vertus thérapeutiques mais surtout pour la survivance des pratiques antiques.Il est célèbre aussi pour sa source d’eau chaude et son Hammam. Son architecture, son temple et ses nombreuses piscines datant de presque
+                            2 millénaires se tiennent avec leurs murs massifs et leurs dômes en pierre jaune ocre tel un monument doré au milieu de verdures, saisi par un silence religieux, que seules troublent les chutes des eaux du Hammam.</p>
+                        <div class="date">Station thermale</div>
+                        <div class="tags">
+                            <div class="tag">moyen</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+        <section class="cards-wrapper">
+            <div class="card-grid-space">
+                <div class="num">04</div>
+                <a class="cardd" style=" background-image: url(images/Barrage-Mellègue-Tunisie-800x500.jpg);">
+                    <div>
+                        <h1>Oued mallègue</h1>
+                        <p style="margin-top: 6em;">
+                            Le barrage Mellègue ou barrage de Nebeur est un barrage tunisien construit entre 1949 et 1956, sur l’oued Mellègue, à environ sept kilomètres à l’ouest de la ville de Nebeur (gouvernorat du Kef). Ce barrage sera construit en amont de l’actuel barrage
+                            d’Oued Mellègue, envasé et ne pouvant plus assurer les besoins en eau aussi bien pour l’irrigation que pour l’adduction en eau potable.</p>
+                        <div class="date">paysage et nature</div>
+                        <div class="tags">
+                            <div class="tag">facile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">05</div>
+                <a class="cardd" style=" background-image: url(images/site-archéologique-Oudna-3-800x500.jpg);">
+                    <div>
+                        <h1>Oudhna</h1>
+                        <p>Oudna ou Oudhna , nom contemporain de l’antique Uthina, est un site archéologique tunisien situé à trente kilomètres au sud de Tunis capitale sur la route menant à Zaghouan. Uthina connut son âge d’or tout au long des deux premiers
+                            siècles après Jésus-Christ, fouillé partiellement au xixe siècle, les fouilles ont repris sur le site en 1993 pour aboutir à une ouverture au public en 1999.</p>
+                        <div class="date">Site archéologique</div>
+                        <div class="tags">
+                            <div class="tag">facile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">06</div>
+                <a class="cardd" style=" background-image: url(images/Ain-Drahem-2-768x558\ \(3\).jpg);">
+                    <div>
+                        <h1>Les forets</h1>
+                        <p>Tandis que Tabarka offre la splendeur de sa côte rocheuse ourlée de longues plages dorées, Aïn Drahem est une invitation à découvrir l’immense forêt qui couvre le massif de Khroumirie. Village aux toits rouges, calme et authentique,
+                            c’est un point de départ idéal pour des promenades et randonnées. C’est aussi un lieu de séjour exceptionnel pour une détente absolue dans un environnement vivifiant. Un paysage naturel exceptionnel tire son charme de sa nature
+                            verdoyante.
+                        </p>
+                        <div class="date">Nature et paysage</div>
+                        <div class="tags">
+                            <div class="tag">facile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </section>
+
+        <div class="textt">
+            <h2>Avis et recommandations</h2>
+            <div class="flexavis">
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+</body>
+
+</html>

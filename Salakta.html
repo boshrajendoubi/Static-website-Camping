@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        .slideshoww {
+            list-style-type: none;
+        }
+        /** SLIDESHOW **/
+        
+        .slideshoww,
+        .slideshoww:after {
+            top: -16px;
+            /*Not sure why I needed this fix*/
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            z-index: 0;
+        }
+        
+        .slideshoww li span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            z-index: 0;
+            animation: imageAnimation 30s linear infinite 0s;
+        }
+        
+        .slideshoww li:nth-child(1) span {
+            background-image: url(images/salakta.jpg);
+        }
+        
+        .slideshoww li:nth-child(2) span {
+            background-image: url(images/salaktaa.jpg);
+            animation-delay: 6s;
+        }
+        
+        .slideshoww li:nth-child(3) span {
+            background-image: url(images/salaktaaa.jpg);
+            animation-delay: 12s;
+        }
+        
+        .slideshoww li:nth-child(4) span {
+            background-image: url(images/salaktaaaa.jpg);
+            animation-delay: 18s;
+        }
+        
+        .slideshoww li:nth-child(5) span {
+            background-image: url(images/salaktaaaaa.jpg);
+            animation-delay: 24s;
+        }
+        
+        @keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                animation-timing-function: ease-in;
+            }
+            8% {
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+            17% {
+                opacity: 1
+            }
+            25% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        
+        @keyframes titleAnimation {
+            0% {
+                opacity: 0
+            }
+            8% {
+                opacity: 1
+            }
+            17% {
+                opacity: 1
+            }
+            19% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        
+        .no-cssanimations .cb-slideshow li span {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="body1">
+
+
+
+    <a class="a-retour" href="C:\Users\DELL\Documents\isg L2\Pweb1\projet\mahdiaaa.html"> <button class="btn-avis"> Retour</button> </a>
+    <ul class="slideshoww">
+        <li><span></span></li>
+        <li><span>2</span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+
+
+
+    <div id="milieuContainer">
+        <div class="textt">
+            <h1 class="titre">Sites et lieux à visiter à Salakta </h1>
+            <p class="p1">A une quinzaine de kilomètres au sud de Mahdia, un site romain dont l'essentiel à voir se trouve au musée. On a dégagé de l'antique Sullecthum quelques pans de murs et des restes des thermes. A proximité, les catacombes d'Arch Zara. A l'époque
+                où elle était sous domination byzantine, Salakta était utilisée comme point stratégique pour les conquêtes ; par la suite, important port commercial lors de la Seconde Guerre mondiale, elle servit de base militaire aux Français et de base
+                de défense aux Allemands. La ville est en outre dotée d'une splendide plage aux eaux turquoise, méconnue par les touristes, mais fortement appréciée des Tunisiens.</p>
+            <p class="p1"></p>
+
+
+        </div>
+        <h2> Des activités à faire à Salakta </h2>
+
+        <section class="cards-wrapper">
+            <div class="card-grid-space">
+                <div class="num">01</div>
+                <a class="cardd" style=" background-image: url(images/club\ nautique.jfif);">
+                    <div>
+                        <h1>club nautique</h1>
+                        <p style="margin-top: 6em;"> Profitez des sports nautiques et des plaisirs de la mer au Club nautique 2021 Mahdia </p>
+                        <div class="date">sport nautique</div>
+                        <div class="tags">
+                            <div class="tag">moyen</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">02</div>
+                <a class="cardd" style=" background-image: url(images/peche.jfif);">
+                    <div>
+                        <h1>bateau de peche</h1>
+                        <p>Louez un bateau de Pêche ( شكيف ) et faite la tournée de la ville en mer .</p>
+                        <div class="date">balade sur mer</div>
+                        <div class="tags">
+                            <div class="tag">facile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">03</div>
+                <a class="cardd" style="background-image: url(images/quad.jpg);">
+                    <div>
+                        <h1> quad</h1>
+                        <p> Salakta est une vraie destination quad</p>
+                        <div class="date">balade sur quad</div>
+                        <div class="tags">
+                            <div class="tag">moyen</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+        <section class="cards-wrapper">
+            <div class="card-grid-space">
+                <div class="num">04</div>
+                <a class="cardd" style=" background-image: url(images/diy-planche-surf.jpg);">
+                    <div>
+                        <h1>Surf</h1>
+                        <p style="margin-top: 6em;">
+                            Surfez une vague en position frontside en kite avec Mahdia kitesurf</p>
+                        <div class="date">spirt nautique</div>
+                        <div class="tags">
+                            <div class="tag">difficile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">05</div>
+                <a class="cardd" style=" background-image: url(images/Subway-Diving-Centre-Mahdia-800x500.jpg);">
+                    <div>
+                        <h1>Plongée sous marine</h1>
+                        <p>Vivez une expérience inoubliable dans ses plus beaux sites avec Cap Afrique Mahdia</p>
+                        <div class="date">activité nautique</div>
+                        <div class="tags">
+                            <div class="tag">difficile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </section>
+
+        <div class="textt">
+            <h2>Avis et recommandations</h2>
+            <div class="flexavis">
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+        .slideshoww {
+            list-style-type: none;
+        }
+        /** SLIDESHOW **/
+        
+        .slideshoww,
+        .slideshoww:after {
+            top: -16px;
+            /*Not sure why I needed this fix*/
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            z-index: 0;
+        }
+        
+        .slideshoww li span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            z-index: 0;
+            animation: imageAnimation 30s linear infinite 0s;
+        }
+        
+        .slideshoww li:nth-child(1) span {
+            background-image: url(images/medinaqaaaaaa.webp);
+        }
+        
+        .slideshoww li:nth-child(2) span {
+            background-image: url(images/medina\ mahdia.jpg);
+            animation-delay: 6s;
+        }
+        
+        .slideshoww li:nth-child(3) span {
+            background-image: url(images/borj-110821-1.jpg);
+            animation-delay: 12s;
+        }
+        
+        .slideshoww li:nth-child(4) span {
+            background-image: url(images/mahdia\ \(3\).jpg);
+            animation-delay: 18s;
+        }
+        
+        .slideshoww li:nth-child(5) span {
+            background-image: url(images/La-Médina-de-Mahdia1-374x252\ \(1\).jpg);
+            animation-delay: 24s;
+        }
+        
+        @keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                animation-timing-function: ease-in;
+            }
+            8% {
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+            17% {
+                opacity: 1
+            }
+            25% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        
+        @keyframes titleAnimation {
+            0% {
+                opacity: 0
+            }
+            8% {
+                opacity: 1
+            }
+            17% {
+                opacity: 1
+            }
+            19% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        
+        .no-cssanimations .cb-slideshow li span {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="body1">
+
+
+
+    <a class="a-retour" href="C:\Users\DELL\Documents\isg L2\Pweb1\projet\mahdiaaa.html"> <button class="btn-avis"> Retour</button> </a>
+    <ul class="slideshoww">
+        <li><span></span></li>
+        <li><span>2</span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+
+
+
+    <div id="milieuContainer">
+        <div class="textt">
+            <h1 class="titre">Sites et lieux à visiter à la médina </h1>
+            <p class="p1">Les Mahdiens disent de leurs plages que ce sont les plus belles de Tunisie. Elles comptent en tout cas parmi les moins fréquentées. Sable couleur farine, mer turquoise ; pas d'algues indésirables et une brise qui en été rafraîchit agréablement.
+                Un atout non négligeable, d'autant que Mahdia offre également l'avantage de ne pas être encore trop développée touristiquement. Les hôtels - une vingtaine - sont regroupés à l'extérieur de la ville, le long de la plage qui s'étire en ruban
+                sur plusieurs kilomètres. Autre bon côté de Mahdia : son allure "photogénique", côté pile (son centre-ville aux petites places ombragées d'arbres) et côté face (son café le long de la corniche qui rappelle celui de Sidi Bou Saïd, ses vieilles
+                façades en front de mer, son cimetière marin, ses ruines antiques).</p>
+            <p class="p1">La ville de Mahdia renfermait alors, outre le palais du prince, la Grande Mosquée, l’Administration et les boutiques des artisans (tisserands, ferronniers, joailliers), qui habitaient un faubourg sur le continent. La ville de Mahdia connut
+                une vie intellectuelle et artistique remarquable. Mais les Fatimides, affaiblis par les révoltes et les soulèvements internes, choisirent de fuir en Egypte et d’y fonder le Caire en 973. La ville de Mahdia fut le théâtre d’épopées avec
+                les incursions des Normands de Sicile, des Génois, des Chevaliers de Malte puis des Espagnols, avant de retrouver la stabilité. Un repeuplement successif d’Andalous,d’Anatoliens et de pêcheurs siciliens en fit une ville riche de cultures
+                et de traditions</p>
+
+
+        </div>
+        <h2> Des lieux pittoresques à graver dans la mémoire </h2>
+
+        <section class="cards-wrapper">
+            <div class="card-grid-space">
+                <div class="num">01</div>
+                <a class="cardd" style=" background-image: url(images/le\ fort\ ottoman.jfif);">
+                    <div>
+                        <h1>BORJ EL KEBIR</h1>
+                        <p style="margin-top: 6em;">Ce borj est une forteresse qui a été érigée à la fin du XVIe siècle à l’emplacement d’un ancien palais fatimide et est considéré comme l’un des plus beaux spécimens de l’architecture militaire ottomane. Fondé sur un plan quadrangulaire
+                            et plus tard doté de bastions d’angles, l’édifice est ceint d’une puissante muraille à l’origine percée d’une seule entrée . </p>
+                        <div class="date">site archéologique</div>
+                        <div class="tags">
+                            <div class="tag">facile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">02</div>
+                <a class="cardd" style=" background-image: url(images/la-grande-mosquee-mahdia6.webp);">
+                    <div>
+                        <h1>LA GRANDE MOSQUÉE FATIMIDE</h1>
+                        <p>La mosquée Fatimide de Mahdi d’origine possédait d’ailleurs deux murs communs avec le rempart maritime de la médina. Il faut par ailleurs noter que cette mosquée a été totalement rénovée, quasiment reconstruite, entre 1961 et 1965,
+                            selon les plans exacts du sanctuaire du dixième siècle.</p>
+                        <div class="date">site archéologique</div>
+                        <div class="tags">
+                            <div class="tag">facile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">03</div>
+                <a class="cardd" style="background-image: url(images/skifa-kahla3.jpg);">
+                    <div>
+                        <h1>LA SKIFA KAHLA</h1>
+                        <p> Skifa El Kahla (appelée aussi Bab Zouila) : énorme porte fortifiée datant à l’origine du xe siècle (élevée entre 916 et 921) puis restaurée au xvie siècle, constitue encore l’un des points d’accès au centre historique de la ville
+                            de Mahdia et l’un des rares vestiges des anciens remparts de la ville, située en plein centre de l’ancienne citadelle.</p>
+                        <div class="date">site archéologique</div>
+                        <div class="tags">
+                            <div class="tag">facile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+        <section class="cards-wrapper">
+            <div class="card-grid-space">
+                <div class="num">04</div>
+                <a class="cardd" style=" background-image: url(images/L’amphithéâtre-d’El-Jem-Mahdia-3-800x500.jpg);">
+                    <div>
+                        <h1>Le jem</h1>
+                        <p style="margin-top: 6em;">
+                            Pas loin de Mahdia, ne ratez surtout pas l’opportunité de visiter la ville d’El Jem pour voir la Troisième amphithéâtre du monde antique après celui de Rome (43000 spectateurs) et de Capoue (35.000 spectateurs), le prestigieux Colisée d’El Jem d’une capacité
+                            de 27000 spectateurs, est posé dans cette plaine telle une énigme. Dans cette zone déshéritée, l’édifice paraît défier la sournoise insinuation de la friche et de la steppe.</p>
+                        <div class="date">site archéologique</div>
+                        <div class="tags">
+                            <div class="tag">moyen</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">05</div>
+                <a class="cardd" style=" background-image: url(images/mahdiaaaaa.jpg);">
+                    <div>
+                        <h1>Port de Mahdia</h1>
+                        <p>La ville côtière de Mahdia est située sur une presqu'île rocheuse. Le port de pêche est l'un des plus importants de Tunisie. À larrivée, appelez sur VHF 16 « Apip Mahdia » : le maître de port indiquera la place disponible (quai
+                            accueil ou parmi les bateaux de pêche).</p>
+                        <div class="date">activité nautique</div>
+                        <div class="tags">
+                            <div class="tag">difficile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </section>
+
+        <div class="textt">
+            <h2>Avis et recommandations</h2>
+            <div class="flexavis">
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <!--   <style>
+        figure {
+            position: relative;
+            background-image: url(images/ain\ drahem\ 9.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .fig1 {
+            position: relative;
+            background-image: url(images/parcours-golf.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: rgba(230, 230, 230, 0.7);
+            color: #666;
+            transition: all 0.35s ease;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+        }
+        
+        .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/darjdoud.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/dar\ jdoud.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/dar\ jdoud\ mekla\ 2.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/dar\ jdoud\ mekla.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/dar\ jdod2.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            transform: translateX( 700px);
+            background-image: url(images/dar\ jdod\ paysage.jpg);
+            background-size: cover;
+            animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part .card_part-one {
+            z-index: 7;
+            background-image: url(images/le\ rocher.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-two {
+            z-index: 6;
+            background-image: url(images/le\ rocher\ grillade.jpg);
+            background-size: cover;
+            animation-delay: 7s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-three {
+            z-index: 5;
+            background-image: url(images/le\ rocher\ mangger.jpg);
+            background-size: cover;
+            animation-delay: 14s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .photoscontainer1 .card_part.card_part-four {
+            z-index: 4;
+            background-image: url(images/le\ rocher\ mangerr.jpg);
+            background-size: cover;
+            animation-delay: 21s;
+            width: 100%;
+            height: 100%;
+        }
+    </style>  -->
+    <style>
+        .slideshoww {
+            list-style-type: none;
+        }
+        /** SLIDESHOW **/
+        
+        .slideshoww,
+        .slideshoww:after {
+            top: -16px;
+            /*Not sure why I needed this fix*/
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            z-index: 0;
+        }
+        
+        .slideshoww li span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            z-index: 0;
+            animation: imageAnimation 30s linear infinite 0s;
+        }
+        
+        .slideshoww li:nth-child(1) span {
+            background-image: url(images/chebikaa.jpg);
+        }
+        
+        .slideshoww li:nth-child(2) span {
+            background-image: url(images/chebikaaa.jpg);
+            animation-delay: 6s;
+        }
+        
+        .slideshoww li:nth-child(3) span {
+            background-image: url(images/chebikaaaa.jpg);
+            animation-delay: 12s;
+        }
+        
+        .slideshoww li:nth-child(4) span {
+            background-image: url(images/chebikaaaaa.jpg);
+            animation-delay: 18s;
+        }
+        
+        .slideshoww li:nth-child(5) span {
+            background-image: url(images/chebikaaaaaa.jpg);
+            animation-delay: 24s;
+        }
+        
+        @keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                animation-timing-function: ease-in;
+            }
+            8% {
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+            17% {
+                opacity: 1
+            }
+            25% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        
+        @keyframes titleAnimation {
+            0% {
+                opacity: 0
+            }
+            8% {
+                opacity: 1
+            }
+            17% {
+                opacity: 1
+            }
+            19% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        
+        .no-cssanimations .cb-slideshow li span {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="body1">
+
+
+
+    <a class="a-retour" href="C:\Users\DELL\Documents\isg L2\Pweb1\projet\Tozeur.html"> <button class="btn-avis"> Retour</button> </a>
+    <ul class="slideshoww">
+        <li><span></span></li>
+        <li><span>2</span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+
+
+
+    <div id="milieuContainer">
+        <div class="textt">
+            <h1 class="titre">Sites et lieux à visiter à chebika </h1>
+            <p class="p1">Etant une oasis de montagne, Chebika qui appartient au Grand Sud de la Tunisie, est située, plus précisément à l’ouest du gouvernorat de Tozeur. Elle correspond sans doute à l’antique poste avancé d’Ad Speculum. Les Romains y utilisaient des
+                miroirs pour communiquer avec les autres postes et signaler d’éventuelles incursions ennemies, vu son emplacement située sur le limes saharien reliant Tébessa à Gafsa. /p>
+                <p class="p1">L’actuel village de Chebika est construit à proximité du vieux village abandonné. Le site, écrit Jean Duvignaud, « est placé dans le croisement de deux avancées de la montagne qui s’ouvre ici vers le désert ». La trame urbaine se résume
+                    à un échiquier dont les lignes sont formées par des rues se croisant au niveau de la place du marché.</p>
+
+
+        </div>
+        <h2> Des lieux pittoresques à graver dans la mémoire </h2>
+
+        <section class="cards-wrapper">
+            <div class="card-grid-space">
+                <div class="num">01</div>
+                <a class="cardd" style=" background-image: url(images/Sahara\ lounge\ acrobranche.jpg);">
+                    <div>
+                        <h1>sahara Lounge</h1>
+                        <p style="margin-top: 6em;">Pour les sportifs amateurs de sensation, parcours en acrobranche. Egalement, possibilité de louer des vélos pour se balader dans la palmerais</p>
+                        <div class="date">acrobranche</div>
+                        <div class="tags">
+                            <div class="tag">difficile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">02</div>
+                <a class="cardd" style=" background-image: url(images/oasis\ midesss.jfif);">
+                    <div>
+                        <h1>oasis de jemia</h1>
+                        <p>C'est l'une des plus belles oasis de montagne de Tunisie, avec une magnifique gorge qui s'étend sur 3 km. La gorge est distincte avec ses formes rondes et ses forts contrastes de couleur. Dans ces gorges aux paysages désertiques,
+                            on peut observer des fossiles et des minéraux colorés, âgés de millions d'années. Un paysage digne du cinéma. Pour la petite histoire, ce lieu a notamment servi de décor aux fabuleuses scènes du film "Le Patient anglais", en
+                            1996.
+
+
+                        </p>
+                        <div class="date">paysage et nature</div>
+                        <div class="tags">
+                            <div class="tag">facile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <div class="num">03</div>
+                <a class="cardd" style=" background-image: url(images/Chebika\ baignades\ enfants\ du\ village.jpg);">
+                    <div>
+                        <h1>oasis de chebika</h1>
+                        <p style="margin-top: 6em;">
+                            L’oasis de Chebika est alimenté toute l’année par une source d’eau plutôt argileuse où il est possible de se baigner et faire des bains d’argile verte. </p>
+                        <div class="date">baignade</div>
+                        <div class="tags">
+                            <div class="tag">facile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="cards-wrapper">
+
+            <div class="card-grid-space">
+                <div class="num">04</div>
+                <a class="cardd" style=" background-image: url(images/3cc01-spa.jpg);">
+                    <div>
+                        <h1>hammam jerid</h1>
+                        <p>El Hamma du jerid à plusieurs hammam alimentés en eaux chaude naturelle, dont un hammam ouvert récemment équipé d'une piscine!</p>
+                        <div class="date">détente</div>
+                        <div class="tags">
+                            <div class="tag">moyen</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-grid-space">
+                <div class="num">05</div>
+                <a class="cardd" style=" background-image: url(images/anantara_tozeur_resort_desert_adventures_944x510.webp)">
+                    <div>
+                        <h1>le desert </h1>
+                        <p>Une visite du désert du Sahara est une expérience que chacun doit avoir faite au moins une fois dans sa vie. C'est un voyage qui vaut bien l'effort, vous aurez de bons souvenirs que vous n'oublierez jamais. Imaginez-vous en 4*4
+                            , en randonnée à travers le désert du Sahara. Il n'y a rien autour de vous, et tout ce que vous pouvez entendre sont les pas du chameau sur le sable fin. Le ciel est vaste et clair dans la journée et rempli de millions d’étoiles
+                            la nuit.</p>
+                        <div class="date">excursion en 4*4</div>
+                        <div class="tags">
+                            <div class="tag">difficile</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </section>
+
+        <div class="textt">
+            <h2>Avis et recommandations</h2>
+            <div class="flexavis">
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="avis-container">
+                    <div class="avis-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="images/client1.jfif">
+                                </div>
+                                <div class="user-name">
+                                    <strong>Ines Laabidi</strong>
+                                    <p class="avisspaaan">
+                                        @laabidi2001
+                                    </p>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <p>Une belle promenade à faire, vue magique. Bon le fort ne se visite pas mais faire le tour ça vaut le coup pour la vue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+</body>
+
+</html>
